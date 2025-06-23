@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APHUG Final Project</title>
+    <style>
+        .project-title {
+            text-align: center;
+            font-size: 90px;
+            line-height: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 95px;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            width: 960px;
+            font-weight: bold;
+        }
+    </style>
+    
+    <style>
+        .official-looking {
+            top: 0px;
+            position:fixed;
+            line-height: 60px;
+            background-color: rgb(148, 5, 5);
+            font-family: 'Times New Roman', Times, serif;
+            text-align:left;
+            color: white;
+            padding-left: 75px;
+            padding-right: 545px;
+            font-size: 40px;
+        }
+    </style>
+    <style>
+        .author {
+            margin-right: 100px;
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 15px;
+            color:rgb(79, 78, 78);
+            margin-top: 2px;
+        }
+    </style>
+    <style>
+        .image {
+            width: 250px;
+            margin-left: 500px;
+        }
+    </style>
+    <style>
+        .essay {
+            text-indent: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 120px;
+            margin-top: 0px;
+            width: 940px;
+        }
+    </style>
+    <style>
+        .intro {
+            text-indent: 20px;
+            margin-right:80px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    </style>
+
+    <style>
+        .Heading {
+            margin-top: 65px;
+            background-color: rgba(255, 255, 255, 0.626);
+            color:rgb(148, 5, 5);
+            font-size: 18px;
+            box-shadow: 2px 2px 4px rgb(79, 78, 78);
+            padding-left: 80px;
+            padding-right: 80px;
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        .searchbox {
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .article {
+            margin-left:120px;
+            display: inline-block;
+            align-items: baseline;
+        }
+
+        .image-left {
+            display: inline-block;
+        }
+
+        .figured-out {
+            text-indent: 20px;
+            margin-left: 20px;
+            display: inline-block;
+            text-align: left;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 400px;
+        }
+
+        .continuation {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 120px;
+            width: 940px;
+        }
+
+        .keep-going {
+            text-indent: 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 120px;
+            width: 940px;
+        }
+
+
+        .new-paragraph {
+            display: inline-block;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 120px;
+            text-indent: 20px;
+            width: 500px;
+        }
+
+        .map {
+            display: inline-block;
+        }
+
+        .img-right {
+            height: 350px;
+            width: auto;
+        }
+
+        .graph {
+            display: inline-block;
+            margin-left: 120px;
+        }
+
+        .table {
+            display:inline-block;
+            border-color: rgb(5, 5, 86);
+        }
+
+        .img-bottom {
+            width: 300px;
+            height: auto;
+        }
+
+        .img-bottom-right {
+            width: 640px;
+        }
+        
+        .almost-there {
+            text-indent: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 120px;
+            width: 940px;
+        }
+
+        .solution {
+            font-family:'Times New Roman', Times, serif;
+            margin-left: 200px;
+            font-size: 30px;
+            color:rgb(79, 78, 78);
+        }
+
+        .conclusion {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-indent: 20px;
+            width: 940px;
+            margin-left: 120px;
+        }
+        .conclusion-continued {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-indent: 20px;
+            width: 940px;
+            margin-left: 120px;
+        }
+
+        .img-of-woman {
+            width: 100%;
+            height: auto;
+        }
+
+        .quote {
+            font-style: italic;
+            color:rgb(121, 118, 118);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            font-weight: 100;
+            width: 940px;
+            margin-left: 120px;
+        }
+        .bolding {
+            font-weight:bold;
+        }
+        .bold-words {
+            font-weight:bold;
+        }
+        .boldify {
+            font-weight: bold;
+        }
+        .bold-diva {
+            font-weight: bold;
+        }
+        .all-done {
+            font-weight: bold;
+        }
+        .resources {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            background-color: rgb(148, 5, 5);
+            color:white;
+            display: block;
+            margin-bottom: 30px;
+        }
+        .link {
+            display: inline-block;
+            font-size: 25px;
+            margin-right: 25px;
+        }
+        .link-2 {
+            display: inline-block;
+            font-size: 25px;
+            margin-right: 25px;
+            line-height: 35px;
+        }
+        .link-3 {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .link-4 {
+            display: block;
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .link-5 {
+            font-size: 25px;
+            line-height: 35px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="content">
+    <button class="official-looking">
+        &#9829; AP Human Geography; Final Project
+    </button>
+    <button class="Heading">
+        Geospatial Question: How has globalization and the contagious diffusion of English as a lingua franca impacted idndigenous cultures?
+    </button>
+    <input type="text" class="searchbox" placeholder="search or ctrl+f">
+    <p class="project-title">
+        Bringing a Language Back to Life
+    </p>
+    <p class="author">
+        By: Vanessa Castaneda
+    </p>
+    <p class="intro">
+        240. That&#39;s how many indigenous languages were estimated to have gone extinct in the past 10 years.
+    </p>
+    <p class="essay">
+        2 a month, lost forever. The cause? Assimilation that has been occurring since 1879, when the first Indian 
+        residential school was opened. White supremacist ideology has sought to snuff out native American cultures, 
+        like an oppressive blanket over a bright fire. But now, the pressure is as great as ever, with more pieces 
+        of human history being lost to the past every day. Language is a key cultural trait that uses symbology to give 
+        meaning and a sense of belonging, with huge cultural significance. All over America, time is cruelly claiming the lives of 
+        the last speakers of a variety of languages, leaving only the vague memories of the once vivacious words on 
+        the tips of people&#39;s tongues.
+    </p>
+
+    <div class="article">
+        <img src="HTML.jpg" alt="Evidence#1" class="image-left">
+    </div>
+
+    <div class="figured-out">
+        <p>Since times of colonization, indigenous people have had their culture under attack due to the desecration
+             of their culture that resulted from Indian residence schools. According to American Indian Boarding 
+             Schools Haunt Many, by Chana Bear, “Wright [student as a residence school] remembers matrons bathing 
+             him in kerosene and shaving his head. Students at federal boarding schools were forbidden to express 
+             their culture-everything from wearing long hair to speaking even a single Indian word.” Without being 
+             able to express or practice their culture, many aspects of Native American culture were not passed on 
+             to the younger generations. In order to keep a culture
+            </p>
+    </div>
+
+    <p class="continuation">
+        culture alive the most important thing is to pass it down to the next generation. Traditions cannot be 
+        continually practiced if they are unknown. When these horrifying schools were finally put to a stop, 
+        Native American children found themselves no longer understanding their families. A language barrier was 
+        formed among families and dozens of languages were put in grave danger. 
+    </p>
+
+    <p class="keep-going">
+        In this past decade, the quantity of speakers of an indigenous language has been declining at a rate of 6%.
+        Most languages only have a couple thousand of speakers left, and some have less than 50. To understand why 
+        this is truly happening, we have to look at how English has begun to engross every corner of daily life for
+        people all over the world. Although the British colonial forces largely contributed to the establishment 
+        of English as a lingua franca, or a universal language, in recent years there has been another factor that
+        has served as a catalyst: social media. Pop culture is a backbone in American culture and therefore, had
+        been the main producer of content on social media. From influencers on TikTok to Youtubers, English is
+        the language you will most commonly see pop-culture media in. It has diffused contagiously along with 
+        social media, leading to a risk of developing a cultural homogenization.Consultant Zalmai Zanir says, “If 
+        we don&#39;t keep those structures [referring to language immersion home] going, the competition with English is 
+        too great”. The article Language Immersion House helps Revitalize Lushootseed by Molly Bryant is about a home in Washington
+        where people come to speak, eat, and sleep in Lushootseed, the language of the Coast Salish people who are 
+        native to the Seattle area. Throughout the piece, it is stated that a language next, a physical language
+        where you do not allow English to contaminate, is necessary to revive the dying language. English has seeped
+        into too many parts of daily life, replacing people&#39;s native tongues as it seems the easier way out. If this
+        continues, soon more than languages will be lost to Western culture.
+    </p>
+
+    <div class="new-paragraph">
+        <p class="Hurry-up">
+            What is cultural homogenization? It is defined as the process where local or distinct cultures become more similar
+            or uniform due to the influence of a dominant culture, often leading to a decline in cultural diversity, and it is
+            something that folk cultures and Native American cultures have always been against. Native American cultures value
+            diversity and distinctness of each tribe that belongs to them. All their traditions and their languages are deeply 
+            rooted to who they are as a culture, with every little detail having significance and symbolism, and cultural homogenization
+            puts all of that at risk. Cultural homogenization is said to occur through globalization, media, and technology, where a
+             dominant culture's practices, values, and products are adopted, potentially overshadowing unique local traditions. As 
+             stated in The Language of the Land, “Centuries of genocide, disease, and forced assimilation policies took their toll on 
+             the number of first language speakers,” which shows how efforts to inflict cultural homogenization on Native American 
+             cultures has been going on for far longer than most believe.  
+        </p>
+    </div>
+
+    <div class="map">
+        <img src="map.jpg" alt="Evidence#2" class="img-right">
+    </div>
+
+    <div class="graph">
+        <img src="FortheWebsite.jpg" alt="Evidence#3" class="img-bottom">
+    </div>    
+    
+    <div class="table">
+        <img src="APHUGhtml.jpg" alt="Evidence#4" class="img-bottom-right">
+    </div>
+
+    <p class="almost-there">
+        The contagious diffusion, a type of expansion diffusion, of English as a lingua franca (a common language 
+        that allows people from diverse linguistic backgrounds to understand each other) through social media has 
+        had an undeniable effect on the speakers of a Native American language when looking at statistics. But in
+         order to fully understand English’s impact, we have to take a look at English’s influence on the world.
+        By the criteria of Wallerstein’s World System Theory, the United States qualifies as a core country, and
+        with a GDP, or gross domestic product, of 27.72 trillion USD (2023), it’s clear it checks the significant
+        influence in global trade and finance box in the qualifications of core countries. Due to this influence,
+        it has been able to seep into every aspect of life, leaving its mark. How Native North American Language 
+        Use Changed in the United States by Adrienne Griffiths and Daniela Mejia reports that Native North 
+        American language use declined “20,000 speakers from 2013 to 2021,” and it must be taken into account 
+        that there is little over 300,000 speakers in the US. This means that almost an entire 10% of speakers
+        have been lost in roughly the past decade. Beyond just its influence, English is also significantly 
+        easier to access. Due to the amount of countries that the English colonized as well as the media,
+        it’s somewhat easy to learn English simply because of exposure. However, as it was put in the 
+        article: The Language of the Land, “There’s no conventional textbook. Instead, Honn scours many 
+        sources-folk stories, recordings, research-for relevant grammar and vocabulary,” when discussing how 
+        Native American languages are sometimes taught. It’s clear the Native American languages are having 
+        trouble competing with the ubiquity of the English language.
+    </p>
+
+    <p class="solution"> 
+        A Solution
+    </p>
+
+    <p class="conclusion">
+        Though the case may sound hopeless, it will only be hopeless if nobody takes action, which is why we have 
+        to be inspired by the efforts that have been put forward to save Native American languages, in order 
+        to bring them back to life. Perhaps the most successful solution was written about by Molly
+        Bryant, in her article: Language Immersion House helps Revitalize Lushootseed. With the efforts that not
+        only the Immersion House put in, but the those in the community that they inspired, the number of 
+        Lushootseed speakers “has grown from 5 in 2014 to 472 in 2022,” marking a 9340% increase in speakers,
+        which is unheard of. Their success inspired the plan to battle the loss of Native American 
+        languages and cultural homogenization. Looking at the roots of the problem, it can be seen that younger 
+        generations aren’t learning the languages due to the influence English has had on their lives and the
+        amount of native speakers that are passing away. The languages are being offered at colleges, such as the
+        University of Washington, but it doesn’t seem to be working as 2 languages are still going extinct
+        per month. That’s why the creation of a new program is needed: S.A.L.L. which stands for Saving A 
+        Language’s Life. This program would be dedicated to raising funds to instate immersion homes 
+        as a part of any Native American Language curriculum offered at universities, as well as raising funds 
+        to instate Native American Language courses in universities across the United States. 
+    </p>
+    <p class="conclusion-continued">
+        To fully understand
+        the solution, it is necessary to outline the steps in creating the S.A.L.L language immersion homes.
+        <span class="bolding">Step 1: </span>Finding a group to stay in the home is necessary which starts by having a course offered at the college of the state/area.<span class="bold-words"> Step 2:</span> Holding fundraisers at
+        universities to pay for the AirBnB to be rented as the language immersion house. <span class="boldify">Step 3: </span>
+        Transforming the environment by labeling all items in the household with the translation of the language
+        in which you are immersing. <span class="bold-diva">Step 4:</span> Cutting out English by encouraging only the language into which 
+        students will be immersing to be spoken. <span class="all-done">Step 5: </span>Setting a designated block of time everyday to practice 
+        conversing in the language with the group as well as reading and writing. This process would be carried out
+         over the course of a week, and would serve as a field trip that's part of the course that students take. The program will be a non-profit that would begin right here in Seattle, as the University of 
+         Washington is already passionate about improving their Lushootseed program, with Professor Hohn being an 
+         advocate for the protecting indigenous languages. From the University of Washington, the first milestone, 
+         the program would grow and try to expand to all colleges in Washington State to reach its second milestone.
+          From Washington State, as the program’s supporters and funds grow, the goal would be to expand alongside 
+          the entirety of the West Coast to complete its third milestone, and eventually, across the whole of the
+           United States of America for its fourth and final milestone. The goal of S.A.L.L. is to successfully 
+           reintroduce indigenous languages to a younger generation, so they can continue to be passed down and the 
+           culture they carry with them can be kept alive. 
+    </p>
+
+        <div class="inspiration">
+        <img src="Inspirational.png" alt="Evidence#5" class="img-of-woman">
+    </div>
+    <p class="quote">
+        Tami Hohn writes the word ‘alive’ in Southern Lushootseed- a campaign she started in response to the 
+        concept that languages die when they lose their first language speakers. “In our hearts, as Native people,
+         we know that our language is not dead. It’s still alive and our mission is to strengthen its life.”
+    </p>
+    <button class="resources">
+        Resources
+    </button>
+    <a class="link" href="https://www.washington.edu/boundless/teaching-native-languages/" target="_blank">
+     The Language of the Land
+    </a>
+    <a class="link-2" href="https://tulaliplushootseed.com/about-lushootseed/" target="_blank">
+     About Lushootseed
+    </a>
+    <a class="link-3" href="https://www.puyalluptribe-nsn.gov/news/language-immersion-house-helps-revitalize-lushootseed/" target="_blank">
+     Language Immersion House Helps Revitalize Lushootseed
+    </a>
+    <a class="link-4" href="https://www.census.gov/library/stories/2025/06/native-american-language-use.html" target="_blank">
+     How Native North American language use changed in the United States
+    </a>
+    <a class="link-5" href="https://www.npr.org/2008/05/12/16516865/american-indian-boarding-schools-haunt-many" target="_blank">
+     American Indian Boarding Schools Haunt Many
+    </a>
+    </div>
+</body>
+<script>
+  const searchInput = document.getElementById('searchInput');
+const content = document.getElementById('content');
+
+searchInput.addEventListener('input', function() {
+  const searchTerm = this.value.toLowerCase();
+  const paragraphs = content.getElementsByTagName('p');
+
+  for (let i = 0; i < paragraphs.length; i++) {
+    const paragraph = paragraphs[i];
+    const paragraphText = paragraph.textContent.toLowerCase();
+
+    if (paragraphText.includes(searchTerm)) {
+      paragraph.style.display = ''; // Show the paragraph if it matches
+      // Highlight the matching text (optional)
+      const highlightedText = paragraphText.replace(new RegExp(searchTerm, 'gi'), match => `<mark>${match}</mark>`);
+      paragraph.innerHTML = highlightedText;
+
+    } else {
+      paragraph.style.display = 'none'; // Hide the paragraph if it doesn't match
+       // Remove highlighting
+      paragraph.innerHTML = paragraph.textContent;
+    }
+  }
+});
+
+</script>
+</html>
